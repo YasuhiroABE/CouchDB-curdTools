@@ -1,0 +1,3 @@
+"_id","name","roles","type","salt","password_sha"
+"org.couchdb.user:reader","reader","[""readers""]","user","xxxxxx","cf0cb8a8f66c94c975846e1e6d6434da28ed2e1e"
+"org.couchdb.user:writer","writer","[""writers""]","user","xxxxxx","cf0cb8a8f66c94c975846e1e6d6434da28ed2e1e"

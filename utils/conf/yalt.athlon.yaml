@@ -1,0 +1,84 @@
+
+---
+f.a:
+  host: 127.0.0.1
+  port: 5984 
+
+a.a:
+  host: 192.168.1.210
+  port: 5984
+  user: admin
+  password_salt: 66d4c96a5879ff09
+  password: 2b5668e4a49dba3ebd9ad35d7b2a893f
+
+default.user:
+  host: 127.0.0.1
+  port: 5984
+  user: admin
+  password: Xof7Vh5_n2
+
+athlon.reader:
+  host: 192.168.1.210
+  port: 5985
+  user: db.reader
+  password: zaq12wsx
+
+athlon.writer:
+  host: 192.168.1.210
+  port: 5985
+  user: db.writer
+  password: zaq12wsx
+
+admin.admin:
+  host: admin.yasundial.org
+  port: 5984
+  user: admin
+  password_salt: 46bf0a16d118b2ec
+  password: 6bd48db081e03d948c13b703515ec103
+  cacert: /app/www.yadiary.net/conf/ssl.certs/cacert.pem
+  ssl_client_cert_file: /app/www.yadiary.net/conf/ssl.certs/stunnel.client.cert.pem
+  ssl_client_key_file: /app/www.yadiary.net/conf/ssl.keys/stunnel.client.key.pem
+  ssl_client_key_file_pass: 66093ff778642d791afceadadf2e451f
+  ssl_client_key_file_pass_salt: f9a2ecc2c4d8f0ed
+  ssl_verify_mode: OpenSSL::SSL::VERIFY_PEER
+
+yadiary.admin:
+  host: wwwdti.yadiary.net
+  port: 6984
+  user: admin
+  password_salt: f6f7bfabbd90740a
+  password: 67c37f63de82068b01678d7a9ffc2c17
+  cacert: /app/www.yadiary.net/conf/ssl.certs/cacert.pem
+  ssl_client_cert_file: /app/www.yadiary.net/conf/ssl.certs/stunnel.client.cert.pem
+  ssl_client_key_file: /app/www.yadiary.net/conf/ssl.keys/stunnel.client.key.pem
+  ssl_client_key_file_pass: 66093ff778642d791afceadadf2e451f
+  ssl_client_key_file_pass_salt: f9a2ecc2c4d8f0ed
+  ssl_verify_mode: OpenSSL::SSL::VERIFY_PEER
+
+stunnel.admin:
+  host: athlon.yasundial.org
+  port: 6985
+  user: admin
+  password: p3abLJ57BFkV
+  cacert: /app/www.yadiary.net/conf/ssl.certs/cacert.pem
+  ssl_client_cert_file: /app/www.yadiary.net/conf/ssl.certs/stunnel.client.cert.pem
+  ssl_client_key_file: /app/www.yadiary.net/conf/ssl.keys/stunnel.client.key.pem
+  ssl_client_key_file_pass: 66093ff778642d791afceadadf2e451f
+  ssl_client_key_file_pass_salt: f9a2ecc2c4d8f0ed
+  ssl_verify_mode: OpenSSL::SSL::VERIFY_PEER
+
+cone.admin:
+  user: yasu
+  host: yadiary.couchone.com
+  port: 5984
+  password_salt: 43b8fc2dfa2f8af2
+  password: 62758e1b6b8ad7538c677968e0294a30
+
+
+150.admin:
+  host: 172.16.73.150
+  port: 5984
+  user: admin
+  password: zaq12wsx
+
+

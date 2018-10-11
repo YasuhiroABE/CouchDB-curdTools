@@ -1,0 +1,26 @@
+
+---
+default.user:
+  host: 127.0.0.1
+  port: 5984
+
+enced_password.user:
+  host: 127.0.0.1
+  port: 5984
+  user: admin
+  password_salt: 24a8a2637d27bd69
+  password: e7dbf38fad7047835860a834357a52eb
+
+stunnel.user:
+  host: couchdb.example.org ## hostname must be same as the common name of the server certificate.
+  port: 6984
+  user: admin
+  password_salt: 852fe5dbfd8a9599
+  password: 352b8971919bb06c4e0b6871c2515c7c
+  cacert: /app/www.yadiary.net/conf/ssl.certs/cacert.pem
+  ssl_client_cert_file: /app/www.yadiary.net/conf/ssl.certs/stunnel.client.cert.pem
+  ssl_client_key_file: /app/www.yadiary.net/conf/ssl.keys/stunnel.client.key.pem
+  ssl_client_key_file_pass: 1628c4ff88b7ca353d4725df4a1526a1
+  ssl_client_key_file_pass_salt: ee849af50ad6d51a
+  ssl_verify_mode: OpenSSL::SSL::VERIFY_PEER
+
