@@ -1,4 +1,4 @@
-#!/usr/bin/env /usr/local/bin/ruby
+#!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
 #  Copyright (C) 2010,2011 Yasuhiro ABE <yasu@yasundial.org>
 
@@ -133,7 +133,9 @@ end
 
 if $0 == __FILE__
   @basedir = File::dirname($0)
-  $:.unshift File::join([@basedir,"..","..","lib"])
+  require 'rubygems'
+  require 'bundler/setup'
+
   require 'yalt'
   include YALTools::CmdLine
   

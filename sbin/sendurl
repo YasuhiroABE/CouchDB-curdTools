@@ -3,7 +3,9 @@
 #
 if $0 == __FILE__
   @basedir = File.dirname($0)
-  $:.unshift File.join([@basedir, "..", "..", "lib"])
+  ## $:.unshift File.join([@basedir, "..", "..", "lib"])
+  require 'rubygems'
+  require 'bundler/setup'
   require 'yalt'
 
   require 'socket'
@@ -73,7 +75,7 @@ EOF
   
   ## never use YALTools::Auth
   
-  @couch = YALTools::Main.new(Couch::Server.new(opts["host"], opts["port"], opts))
+  @couch = YALTools::Main.new(YALTools::Server.new(opts["host"], opts["port"], opts))
   @couch.debug = @opts[:debug]
   
   json = @couch.get(opts["path"])

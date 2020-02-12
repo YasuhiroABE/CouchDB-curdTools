@@ -6,11 +6,8 @@ README
 
 前提要件
 --------
-* Ruby 1.9.2 
-* CouchDB 1.0.2
-
-JRuby 1.6_RC2での稼働も確認しています。
-JRuby 1.6のセットアップについてはWebサイトを参照してください
+* Ubuntu 18.04 LTS (Ruby 2.5.1p57, CouchDB 2.3.1)
+* Docker CouchDB 2.3.1
 
 ディレクトリ構造
 ----------------
